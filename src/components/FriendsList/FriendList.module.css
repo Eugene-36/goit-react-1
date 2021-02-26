@@ -1,14 +1,11 @@
 .friends {
+  display: flex;
+  text-align: center;
   list-style: none;
-  display: inline-flex;
-  justify-content: space-between;
-  justify-content: center;
 }
 .container {
-  align-items: center;
-  /* display: flex; */
-  display: inline-block;
-  margin-left: 200px;
+  display: flex;
+  justify-content: center;
 }
 .status::after {
   content: "";

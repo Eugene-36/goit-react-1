@@ -5,8 +5,8 @@ import friendStyle from "./FriendList.module.css";
 
 const list = ({ friends }) => {
   return (
-    <ul className={friendStyle.friends}>
-      <div className={friendStyle.container}>
+    <div className={friendStyle.container}>
+      <ul className={friendStyle.friends}>
         {friends.map(({ name, avatar, isOnline }) => (
           <FriendListItem
             name={name}
@@ -15,8 +15,8 @@ const list = ({ friends }) => {
             key={id()}
           />
         ))}
-      </div>
-    </ul>
+      </ul>
+    </div>
   );
 };
 
