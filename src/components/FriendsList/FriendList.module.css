@@ -1,0 +1,32 @@
+.friends {
+  list-style: none;
+  display: inline-flex;
+  justify-content: space-between;
+  justify-content: center;
+}
+.container {
+  align-items: center;
+  /* display: flex; */
+  display: inline-block;
+  margin-left: 200px;
+}
+.status::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+
+  border-radius: 50%;
+  background: red;
+  display: flex;
+}
+.green::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  /* border: 2px solid red; */
+  border-radius: 50%;
+  background: green;
+  display: flex;
+}
